@@ -1,0 +1,260 @@
+@charset "utf-8";
+
+
+body {
+	width: 1000px;
+	margin: 0px auto;
+	font-family: Arial;
+	font-size: 13px;
+}
+
+#banner {
+	width: 1000px;
+	height: 100px;	
+    position: relative;
+}
+.flag {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-right: 0px;
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+}
+.circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#menu {
+	width: 1000px;
+	height: 40px;
+}
+td a {
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    color: black;
+}
+
+td:hover {
+    background-color: white;
+}
+
+td:hover a {
+    color: rgb(74, 74, 255);
+}
+
+#menu table {
+	width: 1000px;
+	height: 40px;
+	border-collapse: collapse;
+    background-color: #015fa9;
+}
+
+#menu table td {
+	text-align: center;
+	font-weight: bold;  
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: rgb(247, 237, 237);
+    padding: 10px;
+    list-style-type: none;
+    margin: 0;
+}  
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.hover-effect {
+    transition: all 0.3s; 
+}
+
+.hover-effect:hover {
+    font-size: 1.2em; 
+    color: purple; 
+}
+
+#main #left {
+	width: 250px;
+	min-height: 400px;
+	float: left;
+	font-weight: bold;
+    display: flex;
+    flex-direction: column ;
+    background-color: #ffffff;
+}
+
+#main #right {
+	max-width: 800px;
+	min-height: 400px;
+	margin-left: 250px;
+    text-indent: 30px;
+}
+
+#footer {
+	width: 1000px;
+	height: 80px;
+	border: 1px solid #015fa9;
+	background: #015fa9;
+	text-align: center;
+	line-height: 20px;
+}
+
+#footer p {
+	font-size: 15px;
+}
+
+.login {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 10px;
+    border: #000 2px solid;
+}
+#left .login h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+    #left .login .group {
+        width: 100%;
+        margin-bottom: 10px;
+        padding-left: -30px;
+    }
+
+.btn {
+    color: white;   
+    background-color: #015fa9;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    top: -5px;
+}
+#left .img {
+    flex: 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    
+}
+
+#left .img img {
+    max-width: 100%; 
+    max-height: 100%; 
+}
+
+.TT1, .TT2,.TT3 {
+	max-width: 100px;
+	max-height: 100px;
+    float: left;
+    padding-right: 12px;
+    padding-left: 46px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: transparent;
+    background-image: radial-gradient(4px 4px at 0 50%, #000 50%, transparent 0);
+    background-size: 3px 0.5px;
+    background-repeat: repeat-x;
+    background-position: 10 100%; 
+}
+
+img {
+    font-size: 30px;
+}
+
+p {
+    font-size: 30px;
+}
+
+.gachtu2 {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+}
+.gachtu2::before {
+    content: '';
+    position: absolute;
+    top: 96%;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 0, 0);
+    transition: left 1s;
+    font-weight: bold;
+}
+.gachtu2:hover::before {
+    left: 0%;
+}
+
+.hover-effect2 {
+    display: inline-block;
+    position: relative;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff9a9a;
+    text-decoration: none;
+    overflow: hidden;
+    transition: color 0.3s ease-in-out;
+    text-align: center; 
+    line-height: 1;  
+}
+
+.hover-effect2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #16c8aa;;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.hover-effect2:hover {
+    color: #a6d86c;
+}
+
+.hover-effect2:hover::after {
+    transform: scaleX(1);
+}
+
+.btn {
+    display: inline-block;
+    color: white;
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #23b9c4;
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
